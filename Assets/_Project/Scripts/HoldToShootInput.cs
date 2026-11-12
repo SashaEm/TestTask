@@ -109,12 +109,7 @@ public class HoldToShootInput : MonoBehaviour
 
         // Visual indicator above the player, not the spawn point.
         _chargePreview.position =
-            _loopManager.PlayerPosition +
-            Vector3.up * (
-                _loopManager.PlayerRadius +
-                _chargeRadius +
-                _previewSpacing
-            );
+            _loopManager.PlayerPosition;
 
         _chargePreview.localScale =
             Vector3.one * (_chargeRadius * 2f);
